@@ -1,11 +1,14 @@
-# MAGENTA — Coastal Metagenomes Pipeline (mangrove & non‑mangrove)
+# **MAGENTA:** The Global **MA**ngrove **GEN**e Ca**TA**logue
 
 [![CI](https://github.com/fjbalvino/magenta/actions/workflows/ci.yml/badge.svg)](https://github.com/fjbalvino/magenta/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-Pipeline reproducible para **descubrir, descargar, QC y ensamblar** metagenomas costeros (manglar y no‑manglar). Este repositorio integra tus _scripts_ existentes y añade estructura, documentación, CI y _good practices_ para que sea **interactivo y atractivo**.
+Los manglares son una conocida reserva de diversidad biológica y un ecosistema altamente productivo. Diversos estudios metagenómicos en diferentes partes del mundo han reconocido a la comunidad microbiana del manglar como un agente importante dentro de los ciclos biogeoquímicos, en los cuales se llevan a cabo procesos tales como la transformación del carbono, la fotosíntesis, la fijación de nitrógeno y la reducción de azufre. 
 
-> **Objetivo:** facilitar la ejecución end‑to‑end (fetch → download/convert → QC → assembly) con comandos simples y reproducibles.
+En la actualidad, sin embargo, no contamos con una herramienta informática que nos permita entender estos procesos y relaciones a una **escala global**.
+
+---
+
 
 ## 🗺️ Diagrama (Mermaid)
 
@@ -13,9 +16,8 @@ Pipeline reproducible para **descubrir, descargar, QC y ensamblar** metagenomas 
 flowchart LR
     A[Fetch metadatos] --> B[Descarga/Conversión]
     B --> C[FastQC paralelo]
-    C --> D[Assembly (MEGAHIT/MetaSPAdes)]
+    C --> D[Assembly: MEGAHIT o MetaSPAdes]
     D --> E[(Resultados)]
-```
 
 ## 📂 Estructura
 
@@ -99,7 +101,3 @@ Lee [CONTRIBUTING.md](CONTRIBUTING.md) para pautas de estilo y PRs.
 
 ---
 
-### ⭐ Bonus: hacerlo aún más interactivo
-- Publica documentación con **GitHub Pages** (por ejemplo, `docs/examples.md` y/o `mkdocs`).
-- Inserta _badges_ de versiones de herramientas (FastQC, MEGAHIT).
-- Añade capturas de `MultiQC` en `docs/`.
