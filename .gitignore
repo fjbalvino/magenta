@@ -1,0 +1,39 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+.venv/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints/
+.notebooks_cache/
+
+# Data / results
+data/
+results/
+tmp/
+logs/
+*.fastq*
+*.fq*
+*.gz
+*.zip
+*.bam
+*.sam
+*.fa
+*.fna
+*.fasta
+*.gz
+*.xz
+
+# Reports
+multiqc_report*
