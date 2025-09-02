@@ -17,6 +17,7 @@ flowchart LR
     B --> C[FastQC paralelo]
     C --> D[Assembly: MEGAHIT o MetaSPAdes]
     D --> E[(Resultados)]
+```
 
 ## 📂 Estructura
 
