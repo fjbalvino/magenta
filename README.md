@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="magenta.png" alt="MAGENTA logo" width="300"/>
+  <img src="https://raw.githubusercontent.com/fjbalvino/magenta/master/magenta.png" alt="MAGENTA logo" width="300"/>
 </p>
 
 # **MAGENTA:** The Global **MA**ngrove **GEN**e Ca**TA**logue
