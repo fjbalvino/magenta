@@ -20,7 +20,7 @@ flowchart LR
 ```
 
 ## 📂 Estructura
-
+```
 magenta/
 ├── notebooks/
 │   └── MAGENTA_preprocessing.ipynb
@@ -39,7 +39,7 @@ magenta/
 ├── Makefile
 ├── requirements.txt
 └── README.md
-
+```
 ## 🚀 Quickstart
 
 ### 1) Clonar y crear entorno
