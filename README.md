@@ -9,7 +9,6 @@ En la actualidad, sin embargo, no contamos con una herramienta informática que 
 
 ---
 
-
 ## 🗺️ Diagrama (Mermaid)
 
 ```mermaid
@@ -21,7 +20,6 @@ flowchart LR
 
 ## 📂 Estructura
 
-```
 magenta/
 ├── notebooks/
 │   └── MAGENTA_preprocessing.ipynb
@@ -40,7 +38,6 @@ magenta/
 ├── Makefile
 ├── requirements.txt
 └── README.md
-```
 
 ## 🚀 Quickstart
 
