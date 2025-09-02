@@ -1,11 +1,22 @@
+<p align="center">
+  <img src="magenta.png" alt="MAGENTA logo" width="300"/>
+</p>
+
 # **MAGENTA:** The Global **MA**ngrove **GEN**e Ca**TA**logue
 
 [![CI](https://github.com/fjbalvino/magenta/actions/workflows/ci.yml/badge.svg)](https://github.com/fjbalvino/magenta/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-Los manglares son una conocida reserva de diversidad biológica y un ecosistema altamente productivo. Diversos estudios metagenómicos en diferentes partes del mundo han reconocido a la comunidad microbiana del manglar como un agente importante dentro de los ciclos biogeoquímicos, en los cuales se llevan a cabo procesos tales como la transformación del carbono, la fotosíntesis, la fijación de nitrógeno y la reducción de azufre. 
+---
+
+## 🌍 Descripción
+
+Los manglares son una conocida reserva de diversidad biológica y un ecosistema altamente productivo.  
+Diversos estudios metagenómicos en diferentes partes del mundo han reconocido a la comunidad microbiana del manglar como un agente importante dentro de los ciclos biogeoquímicos, en los cuales se llevan a cabo procesos tales como la transformación del carbono, la fotosíntesis, la fijación de nitrógeno y la reducción de azufre.  
 
 En la actualidad, sin embargo, no contamos con una herramienta informática que nos permita entender estos procesos y relaciones a una **escala global**.
+
+**MAGENTA** (o *Global MAngrove GENe CaTAlogue*) actúa como un catálogo global de genes únicos y no redundantes a nivel de especie (agrupados al 95% de identidad de nucleótidos). A partir de datos disponibles en bases de acceso público (WGS, metagenomas de acceso público – ENA) y considerando cinco de los principales hábitats microbianos del manglar (**rizosfera, agua de mar, sedimento, suelo y humedal**), MAGENTA busca formular nuevas hipótesis sobre la abundancia, distribución y funciones metabólicas de los microorganismos en este ecosistema.
 
 ---
 
@@ -19,7 +30,10 @@ flowchart LR
     D --> E[(Resultados)]
 ```
 
+---
+
 ## 📂 Estructura
+
 ```
 magenta/
 ├── notebooks/
@@ -37,9 +51,13 @@ magenta/
 ├── .gitignore
 ├── LICENSE
 ├── Makefile
+├── environment.yml
 ├── requirements.txt
 └── README.md
 ```
+
+---
+
 ## 🚀 Quickstart
 
 ### 1) Clonar y crear entorno
@@ -51,7 +69,7 @@ cd magenta
 conda env create -f environment.yml
 conda activate magenta
 
-# Opción B: venv + paquetes pip (necesitarás fastqc/megahit/spades por tu cuenta)
+# Opción B: venv + pip (necesitarás fastqc/megahit/spades instalados por tu cuenta)
 python -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
 ```
@@ -80,22 +98,34 @@ make assemble
 
 > **Nota:** Si usas `MultiQC`, añade tu comando dentro del target `make qc`.
 
+---
+
 ## ⚙️ Variables y rutas
-Los scripts trabajan cómodamente si defines variables de entorno como `MAGENTA_DIR`, `MAG_PROJECT_DIR` o similares (según tu implementación). Puedes exportarlas en tu shell o cargarlas desde `.env`:
+
+Los scripts trabajan cómodamente si defines variables de entorno como `MAGENTA_DIR` o `MAG_PROJECT_DIR`.  
+Puedes exportarlas en tu shell o cargarlas desde `.env`:
 
 ```bash
 export MAGENTA_DIR="$PWD"
 export MAG_PROJECT_DIR="$PWD"
 ```
 
+---
+
 ## ✅ CI (GitHub Actions)
-El flujo `CI` corre **Black + Flake8** y un _smoke test_ que invoca `--help` en cada script para verificar que el repositorio se mantiene saludable.
 
-## 🤝 Contribuir
-Lee [CONTRIBUTING.md](CONTRIBUTING.md) para pautas de estilo y PRs.
-
-## 📜 Licencia
-[MIT](LICENSE)
+El flujo de **CI** corre:
+- **Black + Flake8** (formato y linting de código)
+- Un _smoke test_ que invoca `--help` en cada script para verificar que el repositorio se mantiene saludable.
 
 ---
 
+## 🤝 Contribuir
+
+Lee [CONTRIBUTING.md](CONTRIBUTING.md) para pautas de estilo y PRs.
+
+---
+
+## 📜 Licencia
+
+Este proyecto está bajo licencia [MIT](LICENSE).
