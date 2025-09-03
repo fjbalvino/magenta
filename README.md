@@ -26,10 +26,16 @@ MAGENTA leveraged publicly available metagenomic datasets of mangrove ecosystems
 
 <p align="center">
   <a href="https://fjbalvino.github.io/magenta/" target="_blank">
-    <img src="docs/assets/map-preview.png" alt="Open the interactive MAGENTA map" width="800"/>
+    <img src="docs/assets/map-preview.png" alt="Open the interactive MAGENTA map" style="max-width: 100%; height: auto; border-radius: 8px;"/>
   </a>
   <br/>
   <em>Click the image or use the badge below to open the interactive map</em>
+</p>
+
+<p align="center">
+  <a href="https://fjbalvino.github.io/magenta/">
+    <img src="https://img.shields.io/badge/🌍_Open_Interactive_Map-0A0A0A?style=for-the-badge&logo=github&logoColor=white" alt="Open Interactive Map"/>
+  </a>
 </p>
 
 
