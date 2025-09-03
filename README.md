@@ -20,6 +20,22 @@ En la actualidad, sin embargo, no contamos con una herramienta informática que 
 
 ---
 
+## 🌍 Geography
+
+MAGENTA leveraged publicly available metagenomic datasets of mangrove ecosystems sourced from the European Nucleotide Archive. In its analysis, MAGENTA systematically excluded incomplete or inconsistent datasets, resulting in **71 pairs of sequencing files** derived from seven distinct studies, spanning **12 geographic locations across three countries: China, India, and the United States**.
+
+<p align="center">
+  <a href="https://fjbalvino.github.io/magenta/" target="_blank">
+    <img src="docs/assets/map-preview.png" alt="Open the interactive MAGENTA map" width="800"/>
+  </a>
+  <br/>
+  <em>Click the image or use the badge below to open the interactive map</em>
+</p>
+
+
+---
+
+
 ## 🗺️ Diagrama (Mermaid)
 
 ```mermaid
@@ -36,8 +52,7 @@ flowchart LR
 
 ```
 magenta/
-├── notebooks/
-│   └── MAGENTA_preprocessing.ipynb
+├── notebooks/│   └── MAGENTA_preprocessing.ipynb
 ├── scripts/
 │   ├── 01_magenta_fetch_mangrove.py
 │   ├── magenta_fetch_non_mangrove.py
